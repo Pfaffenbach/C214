@@ -45,49 +45,52 @@ public class TesteBuscaProfessor {
 
     }
 
+    // Professor não existente então ele cai no caso de inesistente
     @Test
     public void testeBuscaProfessor4(){
         ProfessorService service = new MockProfessorService();
         BuscaProfessor buscaProfessor = new BuscaProfessor(service);
         //Fiz a busca
-        Professor professor4 = buscaProfessor.buscaprofessor("Robersvaldo");
+        Professor professor4 = buscaProfessor.buscaprofessor("Roberto");
 
         //Faz assertion
-        assertEquals("Josefino", professor4.getNomeDoProfessor());
-        assertEquals(14, professor4.getHorarioDeAtendimento(), 0.1);
-        assertEquals("integral", professor4.getPeriodo());
+        assertEquals("Inesistente", professor4.getNomeDoProfessor());
+        assertEquals(0, professor4.getHorarioDeAtendimento(), 0.1);
+        assertEquals("Inesistente", professor4.getPeriodo());
 
     }
 
+    // Professor não existente então ele cai no caso de inesistente
     @Test
     public void testeBuscaProfessor5(){
         ProfessorService service = new MockProfessorService();
         BuscaProfessor buscaProfessor = new BuscaProfessor(service);
         //Fiz a busca
-        Professor professor5 = buscaProfessor.buscaprofessor("Katrina");
+        Professor professor5 = buscaProfessor.buscaprofessor("Joana");
 
         //Faz assertion
-        assertEquals("Robersvaldo", professor5.getNomeDoProfessor());
-        assertEquals(20, professor5.getHorarioDeAtendimento(), 0.1);
-        assertEquals("noturno", professor5.getPeriodo());
+        assertEquals("Inesistente", professor5.getNomeDoProfessor());
+        assertEquals(0, professor5.getHorarioDeAtendimento(), 0.1);
+        assertEquals("Inesistente", professor5.getPeriodo());
 
     }
 
+    // Professor não existente então ele cai no caso de inesistente
     @Test
     public void testeBuscaProfessor6(){
         ProfessorService service = new MockProfessorService();
         BuscaProfessor buscaProfessor = new BuscaProfessor(service);
         //Fiz a busca
-        Professor professor6 = buscaProfessor.buscaprofessor("Inesistente");
+        Professor professor6 = buscaProfessor.buscaprofessor("Luiza");
 
         //Faz assertion
-        assertEquals("Katrina", professor6.getNomeDoProfessor());
-        assertEquals(10, professor6.getHorarioDeAtendimento(), 0.1);
-        assertEquals("integral", professor6.getPeriodo());
+        assertEquals("Inesistente", professor6.getNomeDoProfessor());
+        assertEquals(0, professor6.getHorarioDeAtendimento(), 0.1);
+        assertEquals("Inesistente", professor6.getPeriodo());
 
     }
 
-    // Não foi utilizado
+    // Não foi utilizado mas está funcionando
     @Test
     public void testeBuscaProfessorValido(){
         ProfessorService service = new MockProfessorService();
@@ -98,7 +101,7 @@ public class TesteBuscaProfessor {
         assertTrue(professorValido);
     }
 
-    // Não foi utilizado
+    // Não foi utilizado mas está funcionando
     @Test
     public void testeBuscaProfessorInValido(){
         ProfessorService service = new MockProfessorService();
