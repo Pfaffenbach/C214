@@ -1,5 +1,3 @@
-package test;
-
 public class ProfessorConst {
     public static String Professor1 =
             "{ \"nomeDoProfessor\": \"João\", \n " +

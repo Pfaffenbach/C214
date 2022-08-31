@@ -1,26 +1,12 @@
-package test;
-
-import main.Professor;
-import main.BuscaProfessor;
-import main.ProfessorService;
-import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class TesteBuscaProfessor {
-    ProfessorService service;
-    BuscaProfessor buscaProfessor;
-
-    @Before
-    public void setup(){
-        //Criando o contexo do meu teste com o Mock (serviço mock)
-        service = new MockProfessorService();
-        buscaProfessor = new BuscaProfessor(service);
-    }
 
     @Test
     public void testeBuscaProfessor1(){
-
+        ProfessorService service = new MockProfessorService();
+        BuscaProfessor buscaProfessor = new BuscaProfessor(service);
         //Fiz a busca
         Professor professor1 = buscaProfessor.buscaprofessor("João");
 
@@ -33,7 +19,8 @@ public class TesteBuscaProfessor {
 
     @Test
     public void testeBuscaProfessor2(){
-
+        ProfessorService service = new MockProfessorService();
+        BuscaProfessor buscaProfessor = new BuscaProfessor(service);
         //Fiz a busca
         Professor professor2 = buscaProfessor.buscaprofessor("Flavio");
 
@@ -46,7 +33,8 @@ public class TesteBuscaProfessor {
 
     @Test
     public void testeBuscaProfessor3(){
-
+        ProfessorService service = new MockProfessorService();
+        BuscaProfessor buscaProfessor = new BuscaProfessor(service);
         //Fiz a busca
         Professor professor3 = buscaProfessor.buscaprofessor("Matheus");
 
@@ -59,7 +47,8 @@ public class TesteBuscaProfessor {
 
     @Test
     public void testeBuscaProfessor4(){
-
+        ProfessorService service = new MockProfessorService();
+        BuscaProfessor buscaProfessor = new BuscaProfessor(service);
         //Fiz a busca
         Professor professor4 = buscaProfessor.buscaprofessor("Robersvaldo");
 
@@ -72,7 +61,8 @@ public class TesteBuscaProfessor {
 
     @Test
     public void testeBuscaProfessor5(){
-
+        ProfessorService service = new MockProfessorService();
+        BuscaProfessor buscaProfessor = new BuscaProfessor(service);
         //Fiz a busca
         Professor professor5 = buscaProfessor.buscaprofessor("Katrina");
 
@@ -85,7 +75,8 @@ public class TesteBuscaProfessor {
 
     @Test
     public void testeBuscaProfessor6(){
-
+        ProfessorService service = new MockProfessorService();
+        BuscaProfessor buscaProfessor = new BuscaProfessor(service);
         //Fiz a busca
         Professor professor6 = buscaProfessor.buscaprofessor("Inesistente");
 
@@ -99,6 +90,8 @@ public class TesteBuscaProfessor {
     // Não foi utilizado
     @Test
     public void testeBuscaProfessorValido(){
+        ProfessorService service = new MockProfessorService();
+        BuscaProfessor buscaProfessor = new BuscaProfessor(service);
 
         boolean professorValido = buscaProfessor.verificaArrayListExistente("");
 
@@ -108,6 +101,8 @@ public class TesteBuscaProfessor {
     // Não foi utilizado
     @Test
     public void testeBuscaProfessorInValido(){
+        ProfessorService service = new MockProfessorService();
+        BuscaProfessor buscaProfessor = new BuscaProfessor(service);
 
         boolean professorInvalido = buscaProfessor.verificaArrayListExistente("");
 

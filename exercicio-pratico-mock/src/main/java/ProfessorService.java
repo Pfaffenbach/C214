@@ -1,5 +1,3 @@
-package main;
-
 public interface ProfessorService {
     public String busca(String nome);
 

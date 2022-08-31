@@ -1,6 +1,3 @@
-package test;
-
-import main.ProfessorService;
 import java.util.ArrayList;
 
 public class MockProfessorService implements ProfessorService {
@@ -42,7 +39,6 @@ public class MockProfessorService implements ProfessorService {
                 return false;
             }
         }
-
         return false;
     }
 }

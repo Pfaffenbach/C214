@@ -1,5 +1,3 @@
-package main;
-
 public class Professor {
     private String nomeDoProfessor;
     private int horarioDeAtendimento;
