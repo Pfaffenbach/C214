@@ -14,20 +14,20 @@ public class Inimigo {
         return nome;
     }
 
-    public double getQtdVida() {
-        return qtdVida;
-    }
-
-    public String getArma() {
-        return arma;
-    }
-
     public void setNome(String nome) {
         this.nome = nome;
     }
 
+    public double getQtdVida() {
+        return qtdVida;
+    }
+
     public void setQtdVida(double qtdVida) {
         this.qtdVida = qtdVida;
+    }
+
+    public String getArma() {
+        return arma;
     }
 
     public void setArma(String arma) {

@@ -5,8 +5,8 @@ public class BuscaInimigo {
 
     InimigoService inimigoService;
 
-    public BuscaInimigo(InimigoService inimigoService) {
-        this.inimigoService = inimigoService;
+    public BuscaInimigo(InimigoService service) {
+        this.inimigoService = service;
     }
 
     public Inimigo buscaInimigo(int id){

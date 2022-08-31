@@ -5,8 +5,8 @@ public class MockInimigoService implements InimigoService {
 
         if(id == 10){
             return InimigoConst.SKELETON;
+        }else{
+            return null;
         }
-        return null;
     }
-
 }
