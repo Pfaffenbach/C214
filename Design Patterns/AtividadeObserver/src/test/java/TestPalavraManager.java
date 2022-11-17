@@ -43,7 +43,7 @@ public class TestPalavraManager {
         Observavel manager = new Observavel();
         Observador obs1 = new Observador(1);
         manager.registraObservador(obs1);
-        manager.setNovaFrase("Hoje esta de sol");
+        manager.setNovaFrase("Bora comer pizza");
         assertEquals(4, manager.getQtdPalavras());
     }
 
@@ -52,7 +52,7 @@ public class TestPalavraManager {
         Observavel manager = new Observavel();
         Observador obs1 = new Observador(1);
         manager.registraObservador(obs1);
-        manager.setNovaFrase("Hoje esta de sol");
+        manager.setNovaFrase("Bora comer pizza");
         assertEquals(3, manager.getQtdPalavrasPares());
     }
 
@@ -61,7 +61,7 @@ public class TestPalavraManager {
         Observavel manager = new Observavel();
         Observador obs1 = new Observador(1);
         manager.registraObservador(obs1);
-        manager.setNovaFrase("Hoje esta de sol");
+        manager.setNovaFrase("Bora comer pizza");
         assertEquals(1, manager.getQtdPalavrasMaiusculas());
     }
 
@@ -70,7 +70,7 @@ public class TestPalavraManager {
         Observavel manager = new Observavel();
         Observador obs1 = new Observador(1);
         manager.registraObservador(obs1);
-        manager.setNovaFrase("Hoje    esta    de     sol");
+        manager.setNovaFrase("Bora       comer    pizza");
         assertEquals(4, manager.getQtdPalavras());
     }
 

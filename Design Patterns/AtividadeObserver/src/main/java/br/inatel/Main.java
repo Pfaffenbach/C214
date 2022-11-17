@@ -19,6 +19,6 @@ public class Main {
         wordManager.registraObservador(obs2);
         wordManager.registraObservador(obs3);
 
-        wordManager.setNovaFrase("Hoje está frio");
+        wordManager.setNovaFrase("Bora comer lanche");
     }
 }
